@@ -1,0 +1,15 @@
+.rollingBox{
+   position: fixed;
+   width:3.75em;height:100%;
+   top:0; left:0;
+   background-color:#000;
+   z-index: 9;
+   .rollingText{
+      display:block;
+      transform: rotate(-90deg);
+      color:#fff;
+      font-size:35px;
+      font-weight:bold;
+      text-transform: uppercase;
+   }
+}

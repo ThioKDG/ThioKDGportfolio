@@ -1,11 +1,22 @@
-import React from 'react';
+import React from "react";
+
+
+import "./layStyles/layTops.scss";
 
 function Top(props) {
-   return (
-      <section className='introTop'>
-         <h2>prontend</h2>
-      </section>
-   );
+  const path = process.env.PUBLIC_URL;
+  return (
+    <section className="introTop">
+      <h2 className="topTit">frontend</h2>
+      <video
+        className="topVideo"
+        src={path + `/image/main/walk.mp4`}
+        muted
+        autoPlay="ture"
+        loop
+      ></video>
+    </section>
+  );
 }
 
 export default Top;

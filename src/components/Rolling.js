@@ -1,9 +1,9 @@
-import React from 'react';
+import "./compStyle/rollStyle.scss";
 
 function Rolling(props) {
    return (
-      <div>
-         
+      <div className="rollingBox">
+         <span className="rollingText">front</span>
       </div>
    );
 }

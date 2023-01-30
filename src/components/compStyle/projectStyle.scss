@@ -1,0 +1,12 @@
+.projectWrapper{
+   padding:0 calc(1635px - 1483px);
+   .projectList{
+      width:100%;
+      display:flex;
+      flex-wrap: wrap;
+      gap:0 91px;
+      li{
+         width:38.750em;
+      }
+   }
+}

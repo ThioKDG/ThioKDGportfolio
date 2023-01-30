@@ -1,4 +1,11 @@
-body{
-   font-family: 'LeferiBaseType', sans-serif;
-   line-height: 1.5;
+// 초기화
+@import "./reset.css";
+// 변수
+@import "./variable.scss";
+// 폰트
+@import "./font.css";
+
+body {
+  font-family: $Leferi;
+  line-height: 1.5;
 }
