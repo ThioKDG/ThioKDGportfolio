@@ -1,10 +1,12 @@
-import React from 'react';
+import FooterCont from '../components/FooterCont';
+
+import "./layStyles/layFooter.scss"
 
 function Footer(props) {
    return (
-      <div>
-         
-      </div>
+      <footer className='footerContainer'>
+         <FooterCont />
+      </footer>
    );
 }
 

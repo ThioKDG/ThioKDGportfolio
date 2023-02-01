@@ -1,15 +1,29 @@
+// keyframes
+@import "../../asset/style/aniKeyframes.css";
+
 .rollingBox{
    position: fixed;
-   width:3.75em;height:100%;
-   top:0; left:0;
+   width:100vh;
+   left:3%;
+   bottom:0;
    background-color:#000;
    z-index: 9;
-   .rollingText{
-      display:block;
-      transform: rotate(-90deg);
-      color:#fff;
-      font-size:35px;
-      font-weight:bold;
-      text-transform: uppercase;
+   overflow:hidden;
+   display:flex;
+   transform: rotate(-90deg);
+   transform-origin: left bottom;
+   .rollingWrapper{
+      display:flex;
+      animation: rolling 20s linear 0s infinite normal forwards running;
+      .rollingText{
+         display:block;
+         padding: 10px 20px 0 0 ;
+         font-size:35px;
+         font-weight:bold;
+         color:#fff;
+         text-shadow: 0 0 10px #FFFFFF;
+         text-transform: uppercase; 
+      }
+
    }
 }

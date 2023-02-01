@@ -1,27 +1,39 @@
 /* 베이스 */
 @font-face {
-  font-family: 'LeferiBaseType-RegularA';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
+  font-family: 'LeferiBaseType';
+  src: url('../font/LeferiBaseRegular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LeferiBaseTypeBold';
+  src: url('../font/LeferiBaseBold.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 /* 포인트 블랙 */
 @font-face {
   font-family: 'LeferiPoint-BlackA';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackA.woff') format('woff');
+  src: url('../font/LeferiPointBlack.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'LeferiPoint-BlackObliqueA';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackObliqueA.woff') format('woff');
+  src: url('../font/LeferiPointBlackOblique.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 /* 포인트 화이트 */
 @font-face {
-  font-family: 'LeferiPoint-WhiteObliqueA';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+  font-family: 'LeferiPoint-White';
+  src: url('../font/LeferiPointWhite.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LeferiPoint-WhiteItalic';
+  src: url('../font/LeferiPointWhiteOblique.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }

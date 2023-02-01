@@ -9,7 +9,7 @@ import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <>
       <Top />
       <Header />
 
@@ -18,7 +18,7 @@ function App() {
       </Routes>
 
       <Footer />
-    </div>
+    </>
   );
 }
 

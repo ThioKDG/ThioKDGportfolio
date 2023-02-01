@@ -3,7 +3,19 @@ import "./compStyle/rollStyle.scss";
 function Rolling(props) {
    return (
       <div className="rollingBox">
-         <span className="rollingText">front</span>
+         <div className="rollingWrapper">
+            <span className="rollingText">front</span>
+            <span className="rollingText">front</span>
+            <span className="rollingText">front</span>
+            <span className="rollingText">front</span>
+            <span className="rollingText">front</span>
+            <span className="rollingText">front</span>
+            <span className="rollingText">front</span>
+            <span className="rollingText">front</span>
+            <span className="rollingText">front</span>
+            <span className="rollingText">front</span>
+            <span className="rollingText">front</span>
+         </div>
       </div>
    );
 }

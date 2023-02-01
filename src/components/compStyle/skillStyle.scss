@@ -1,0 +1,54 @@
+@import "../../asset/style/variable.scss";
+
+.skillContainer{
+   width:100%;
+   .skillWarpper{
+      width:70%;
+      margin:0 auto;
+      .skillItem{
+         display:flex;
+         // justify-content: space-between;
+         border:1px solid #000;
+         border-right-width:0px;
+         border-left-width:0px;
+         margin-bottom:50px;
+         width:100%;
+         height:calc(300px - 42px);
+         padding:30px 70px;
+         &:last-child{
+            margin:0;
+         }
+         .itemWrapper{
+            display:flex;  
+            gap: 0 25px;
+            width:35%;
+         }
+         .skillBul{
+            height:50px;
+            font-size:30px;
+            border:2px solid #000;
+            border-radius: 30px;
+            padding:0 15px;
+            text-transform: capitalize;
+         }
+         .techWrapper{
+            display:flex;
+            gap:30px;
+            .techIntro{
+               .techTit{
+                  font-family: $LeferiPoint;
+                  font-size:35px;
+                  font-weight: bold;
+                  text-transform: capitalize;
+               }
+               .techInfo{
+                  margin-top:20px;
+                  li{
+                     font-size:20px;
+                  }
+               }
+            }
+         }
+      }
+   }
+}

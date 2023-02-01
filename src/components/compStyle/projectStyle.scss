@@ -1,12 +1,39 @@
+@import "../../asset/style/variable.scss";
+
 .projectWrapper{
-   padding:0 calc(1635px - 1483px);
+   width:70%;
+   margin:0 auto 80px;
+   // padding:0 calc(1635px - 1483px);
    .projectList{
       width:100%;
       display:flex;
+      justify-content: space-between;
       flex-wrap: wrap;
       gap:0 91px;
       li{
          width:38.750em;
+         text-transform: uppercase;
+         .langTit{
+            font-weight: bold;
+            font-size:25px;
+            color:#888585;
+            margin-bottom:15px;
+            display:block;
+         }
+         .projectTit{
+            font-family: $LeferiBold;
+            font-weight:bold;
+            font-size:50px;
+            margin-bottom:15px;
+         }
+         .projectValue{
+            font-size:20px;
+            margin-bottom:10px;
+         }
+         .dateTxt{
+            font-size:15px;
+            color:#9b9a9a;
+         }
       }
    }
 }

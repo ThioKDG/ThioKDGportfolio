@@ -9,3 +9,14 @@ body {
   font-family: $Leferi;
   line-height: 1.5;
 }
+
+/* 드래그 시 색상변경 */
+::selection{
+  background:#999;
+  color:#fff;
+}
+/* 모질라 */
+::-moz-selection{
+  background:#999;
+  color:#fff;
+}
