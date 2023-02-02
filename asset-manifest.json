@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ThioKDGportfolio/static/css/main.152d9160.css",
+    "main.js": "/ThioKDGportfolio/static/js/main.4f27e5ac.js",
+    "static/js/787.8017e7bd.chunk.js": "/ThioKDGportfolio/static/js/787.8017e7bd.chunk.js",
+    "static/media/LeferiBaseBold.woff2": "/ThioKDGportfolio/static/media/LeferiBaseBold.7aa2d9e9075cb926109c.woff2",
+    "static/media/LeferiPointBlackOblique.woff2": "/ThioKDGportfolio/static/media/LeferiPointBlackOblique.bfee1f329f1fd85c383e.woff2",
+    "static/media/LeferiPointBlack.woff2": "/ThioKDGportfolio/static/media/LeferiPointBlack.c488b0fa53dab1f3a123.woff2",
+    "static/media/LeferiPointWhite.woff2": "/ThioKDGportfolio/static/media/LeferiPointWhite.d5968e0b4a625baba7ed.woff2",
+    "static/media/LeferiPointWhiteOblique.woff2": "/ThioKDGportfolio/static/media/LeferiPointWhiteOblique.3e4f1c86a7c8e763bc76.woff2",
+    "static/media/LeferiBaseRegular.woff2": "/ThioKDGportfolio/static/media/LeferiBaseRegular.eefdfc2e1079432a7e99.woff2",
+    "index.html": "/ThioKDGportfolio/index.html",
+    "main.152d9160.css.map": "/ThioKDGportfolio/static/css/main.152d9160.css.map",
+    "main.4f27e5ac.js.map": "/ThioKDGportfolio/static/js/main.4f27e5ac.js.map",
+    "787.8017e7bd.chunk.js.map": "/ThioKDGportfolio/static/js/787.8017e7bd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.152d9160.css",
+    "static/js/main.4f27e5ac.js"
+  ]
+}
