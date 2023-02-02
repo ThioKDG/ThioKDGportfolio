@@ -8,12 +8,11 @@ function Header(props) {
    useEffect(() => {
       const wheelHandler = (e) =>{
          e.deltaY >= 100 ? setHead(true) : setHead(false);
-         console.log(e.deltaY);
       }
+      /* 휠 이벤트 발생시 델타와이 값을 받아서 헤더를 숨겨줌 */
+      window.addEventListener("wheel", wheelHandler);
 
-      refHead.current.addEventListener("wheel", wheelHandler);
-
-      return () =>  refHead.current.removeEventListener("wheel", wheelHandler);
+      return () =>  window.removeEventListener("wheel", wheelHandler);
    }, [])
    
 
@@ -29,9 +28,13 @@ function Header(props) {
                      <li><Link to='/'>skill</Link></li>
                      <li><Link to='/'>about</Link></li>
                   </ul>
+                  <Link to="/" className="mobileMenuOpen">
+                     <p className="hiddenWord">
+                        메뉴 열림 버튼
+                     </p>
+                  </Link>
                </div>
             </nav>
-         
       </header>
    );
 }

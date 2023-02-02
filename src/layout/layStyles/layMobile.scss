@@ -1,0 +1,154 @@
+@media (max-width: 414px) {
+   /* mobile css 적용을 위한 body 태그 삽입 */
+   body{
+      /* top */
+      .introTop{
+         overflow:hidden;
+         .topTit{
+            font-size:60px;
+            width:100%;
+            text-align:center;
+            &::after{
+               left:45%;
+               background-size:50%;
+            }
+         }
+         video{
+            object-fit: cover;
+            width:100%;
+            height:100%;
+         }
+      }
+      /* header */
+      .headerContianer{
+         height:100px;
+         nav{
+            overflow: hidden;
+            .navInner{
+               padding:0 10px;
+               width:100%;
+               .headerLogoH1{
+                  padding:0;
+                  a{
+                     font-size:20px;
+                     padding:5px 15px;
+                  }
+               }
+               .headNaviList{
+                  opacity: 0;
+                  pointer-events: none;
+                  li{
+                     font-size:20px;
+                  }
+               }
+
+            }
+         }
+      }
+      /* project */
+      .projectWrapper{
+         .projectList{
+            gap:50px 0;
+            li{
+               .langTit{
+                  font-size:20px;
+               }
+               .projectTit{
+                  font-size:33px;
+               }
+               .projectValue{
+                  font-size:15px;
+               }
+               .dateTxt{
+                  font-size:10px;
+               }
+            }
+         }
+      }
+      /* skill */
+      .skillContainer{
+         .skillWarpper{
+            width:85%;
+            .skillItem{
+               flex-wrap: wrap;
+               padding:30px 0;
+               justify-content: flex-start;
+               .itemWrapper{
+                  justify-content: flex-start;
+                  width:100%;
+               }
+               .skillBul{
+                  font-size:15px;
+                  padding-top:3px;
+                  height:30px;
+               }
+               .techWrapper{
+                  flex-wrap: wrap;
+                  justify-content: flex-start;
+                  margin-top:10px;
+                  .techIntro{
+                     .techTit{
+                        font-size:20px;
+                     }
+                     .techInfo{
+                        li{
+                           font-size:15px;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+      /* rolling Moblie disable */
+      .rollingBox{
+         display:none;
+      }
+      /* footer */
+      .footerContainer{
+         .footerWrapper{
+            padding: 80px 20px;
+            .topIntro{
+               display:grid;
+               grid-template-columns : 1fr;
+               row-gap: 35%;
+               text-align:center;
+               .rightMent{
+                  font-size:20px;
+                  order: 2
+               }
+               .endingMent, .eng50{
+                  font-size:25px;
+                  text-align:center;
+               }
+               p{
+                  font-size:20px;
+               }
+            }
+            .contactMail{
+               margin:30px 0 0 0;
+               text-align:center;
+               .contItalic{
+                  font-size:25px;
+               }
+               .emailH3{
+                  font-size:25px;
+                  &:hover{
+                     padding:0 10px;
+                  }
+               }
+               .normalW{
+                  font-size:22px;
+               }
+            }
+            .goGithub{
+               text-align:center;
+               margin-top:20px;
+               p{
+                  font-size:40px;
+               }
+            }
+         }
+      }
+   }
+}

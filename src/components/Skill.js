@@ -13,7 +13,7 @@ function Skill() {
                   <article className="techIntro">
                      <h3 className='techTit'>HTML</h3>
                      <ul className="techInfo">
-                        <li>웹표준, 접근성을 고려한 마크업</li>
+                        <li>웹 접근성을 고려한 시멘틱 태그</li>
                         <li>미디어 쿼리를 이용한 반응형 웹 제작</li>
                      </ul> 
                   </article>
@@ -37,9 +37,11 @@ function Skill() {
                   <article className="techIntro">
                      <h3 className='techTit'>JAVASCRIPT(ES6+)</h3>
                      <ul className="techInfo">
-                        <li>사이트 내 동작 구현</li>
-                        <li>open api 사용</li>
-                        <li>Ajax, Json</li>
+                        <li>ES6+ 문법</li>
+                        <li>Map, Filter, Reduce 등 고차 함수</li>
+                        <li>함수 setTimeout, setInterval</li>
+                        <li>콜백함수, promise, async, await</li>
+                        <li>런타임 node.js</li>
                      </ul> 
                   </article>
                   <article className="techIntro">
@@ -62,7 +64,7 @@ function Skill() {
                      <ul className="techInfo">
                         <li>bash, VS CODE 터미널 사용</li>
                         <li>git을 통한 작업물 버전 관리</li>
-                        <li>git hub를 통한 프로젝트 관리</li>
+                        <li>gitHub를 통한 프로젝트 관리</li>
                      </ul> 
                   </article>
                </div>

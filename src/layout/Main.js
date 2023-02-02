@@ -5,6 +5,7 @@ import Rolling from '../components/Rolling';
 import Skill from "../components/Skill";
 
 import "./layStyles/layMain.scss";
+import "./layStyles/layMobile.scss"
 
 function Main() {
    const [project, setProject] = useState([]);
