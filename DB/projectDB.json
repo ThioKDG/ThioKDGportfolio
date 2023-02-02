@@ -1,0 +1,28 @@
+{
+   "projectData" :[
+      {
+         "Id" : 1,
+         "thumbnail" : "nklcb.png",
+         "lang" : "html, css",
+         "projectName" : "넷스쿨라이브",
+         "team" : "팀프로젝트 | 기여도 100%",
+         "date" : "november 11, 2022"
+      },
+      {
+         "Id" : 2,
+         "thumbnail" : "studioRHE.png",
+         "lang" : "html, css, js",
+         "projectName" : "studio rhe",
+         "team" : "팀프로젝트 | 기여도 100%",
+         "date" : "december 19, 2022"
+      },
+      {
+         "Id" : 3,
+         "thumbnail" : "reactPage.png",
+         "lang" : "react, scss",
+         "projectName" : "react 홈페이지 제작",
+         "team" : "개인프로젝트",
+         "date" : "january 16, 2023"
+      }
+   ]
+}
