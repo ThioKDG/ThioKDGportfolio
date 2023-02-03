@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ThioKDGportfolio/static/css/main.86ff3e1c.css",
-    "main.js": "/ThioKDGportfolio/static/js/main.1430fbf3.js",
+    "main.css": "/ThioKDGportfolio/static/css/main.fcf9ed8b.css",
+    "main.js": "/ThioKDGportfolio/static/js/main.1812cdf9.js",
     "static/js/787.8017e7bd.chunk.js": "/ThioKDGportfolio/static/js/787.8017e7bd.chunk.js",
     "static/media/LeferiBaseBold.woff2": "/ThioKDGportfolio/static/media/LeferiBaseBold.7aa2d9e9075cb926109c.woff2",
     "static/media/LeferiPointBlackOblique.woff2": "/ThioKDGportfolio/static/media/LeferiPointBlackOblique.bfee1f329f1fd85c383e.woff2",
@@ -10,12 +10,12 @@
     "static/media/LeferiPointWhiteOblique.woff2": "/ThioKDGportfolio/static/media/LeferiPointWhiteOblique.3e4f1c86a7c8e763bc76.woff2",
     "static/media/LeferiBaseRegular.woff2": "/ThioKDGportfolio/static/media/LeferiBaseRegular.eefdfc2e1079432a7e99.woff2",
     "index.html": "/ThioKDGportfolio/index.html",
-    "main.86ff3e1c.css.map": "/ThioKDGportfolio/static/css/main.86ff3e1c.css.map",
-    "main.1430fbf3.js.map": "/ThioKDGportfolio/static/js/main.1430fbf3.js.map",
+    "main.fcf9ed8b.css.map": "/ThioKDGportfolio/static/css/main.fcf9ed8b.css.map",
+    "main.1812cdf9.js.map": "/ThioKDGportfolio/static/js/main.1812cdf9.js.map",
     "787.8017e7bd.chunk.js.map": "/ThioKDGportfolio/static/js/787.8017e7bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.86ff3e1c.css",
-    "static/js/main.1430fbf3.js"
+    "static/css/main.fcf9ed8b.css",
+    "static/js/main.1812cdf9.js"
   ]
 }
