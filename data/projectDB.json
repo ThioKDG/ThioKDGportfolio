@@ -2,6 +2,14 @@
    "projectData" :[
       {
          "Id" : 1,
+         "thumbnail" : "portfolio.png",
+         "lang" : "react, scss",
+         "projectName" : "포트폴리오 제작 과정",
+         "team" : "개인작업",
+         "date" : "january , 2023"
+      },
+      {
+         "Id" : 2,
          "thumbnail" : "nklcb.png",
          "lang" : "html, css",
          "projectName" : "넷스쿨라이브",
@@ -9,7 +17,7 @@
          "date" : "november 11, 2022"
       },
       {
-         "Id" : 2,
+         "Id" : 3,
          "thumbnail" : "studioRHE.png",
          "lang" : "html, css, js",
          "projectName" : "studio rhe",
@@ -17,7 +25,7 @@
          "date" : "december 19, 2022"
       },
       {
-         "Id" : 3,
+         "Id" : 4,
          "thumbnail" : "reactPage.png",
          "lang" : "react, scss",
          "projectName" : "react 홈페이지 제작",
