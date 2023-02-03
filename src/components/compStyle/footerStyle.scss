@@ -1,8 +1,8 @@
 @import "../../asset/style/variable.scss";
 
 .footerWrapper{
-   padding:80px 160px 80px;
-   width:100%;
+   padding:50px 160px;
+   width:100%;height:100%;
    margin:0 auto;
 
    .topIntro{
@@ -20,8 +20,7 @@
       }
    }
    .contactMail{
-      margin-top:11.250em;
-      margin-bottom:11.250em;
+      margin: 9.250em 0;
       .contItalic{
          font-size:55px;
          font-family: $LeferiPointWI;

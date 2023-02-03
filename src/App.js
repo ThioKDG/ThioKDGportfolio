@@ -14,7 +14,7 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/ThioKDGportfolio" element={<Main />} />
       </Routes>
 
       <Footer />

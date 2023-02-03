@@ -2,7 +2,7 @@
 
 .projectWrapper{
    width:70%;
-   margin:0 auto 80px;
+   margin:0 auto 150px;
    // padding:0 calc(1635px - 1483px);
    .projectList{
       width:100%;
@@ -12,7 +12,13 @@
       gap:0 91px;
       li{
          width:38.750em;
+         min-height:717px;
          text-transform: uppercase;
+         .projectPhoto{
+            min-height:510px;
+            display:flex;
+            align-items: center;
+         }
          .langTit{
             font-weight: bold;
             font-size:25px;

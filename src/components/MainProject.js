@@ -8,9 +8,9 @@ function MainProject({ project }) {
       <div className="projectWrapper">
          <ul class="projectList">
             {project.map((item) => (
-               <li key={item.id}>
+               <li key={item.Id}>
                   <Link to="/">
-                     <p>
+                     <p className="projectPhoto">
                         <img src={path + `/image/main/${item.thumbnail}`} alt={item.projectName} />
                      </p>
                      <span className="langTit">{item.lang}</span>

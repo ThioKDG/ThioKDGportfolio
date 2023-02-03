@@ -12,8 +12,9 @@ function Main() {
 
    useEffect(()=>{
       const getData = async() => {
-         const projectList = await axios.get("./DB/projectDb.json");
+         const projectList = await axios.get("./data/projectDB.json");
          setProject(projectList.data.projectData); 
+         console.log(projectList.data.projectData);
       };
       getData();
    }, []);

@@ -1,4 +1,4 @@
-@media (max-width: 414px) {
+@media (max-width: 458px) {
    /* mobile css 적용을 위한 body 태그 삽입 */
    body{
       /* top */
@@ -23,10 +23,11 @@
       .headerContianer{
          height:100px;
          nav{
-            overflow: hidden;
+            // overflow: hidden;
             .navInner{
                padding:0 10px;
                width:100%;
+               position: relative;
                .headerLogoH1{
                   padding:0;
                   a{
@@ -37,9 +38,32 @@
                .headNaviList{
                   opacity: 0;
                   pointer-events: none;
+                  position: absolute;
+                  background: #fff;
+                  width: 100%;
+                  top: 0;
+                  gap: 5px;
+                  justify-content: center;
+                  padding: 10px 0;
+                  transition: 0.3s;
                   li{
                      font-size:20px;
+                     width:30%;
+                     padding:0;
+                     a{
+                        text-align:center;
+                     }
                   }
+               }
+               .on{
+                  opacity: 1;
+                  pointer-events: all;
+                  top:58px;
+               }
+               .moMenuOpen{
+                  display:block;
+                  padding:20px;
+                  background: url(../../asset/images/icon_menu.png) no-repeat 50%;
                }
 
             }
@@ -106,6 +130,7 @@
       }
       /* footer */
       .footerContainer{
+         height:100%;
          .footerWrapper{
             padding: 80px 20px;
             .topIntro{

@@ -34,18 +34,20 @@
          }
          .techWrapper{
             display:flex;
-            gap:30px;
+            gap:100px;
             .techIntro{
                .techTit{
                   font-family: $LeferiPoint;
-                  font-size:35px;
+                  font-size:30px;
                   font-weight: bold;
                   text-transform: capitalize;
                }
                .techInfo{
                   margin-top:20px;
                   li{
-                     font-size:20px;
+                     font-size:18px;
+                     letter-spacing: .5px;
+                     line-height:1.8;
                   }
                }
             }

@@ -39,6 +39,7 @@ function Skill() {
                      <ul className="techInfo">
                         <li>ES6+ 문법</li>
                         <li>Map, Filter, Reduce 등 고차 함수</li>
+                        <li>비동기적 실행</li>
                         <li>함수 setTimeout, setInterval</li>
                         <li>콜백함수, promise, async, await</li>
                         <li>런타임 node.js</li>
@@ -47,7 +48,9 @@ function Skill() {
                   <article className="techIntro">
                      <h3 className='techTit'>React</h3>
                      <ul className="techInfo">
-                        <li>Hook 사용, state, REF 등을 이용</li>
+                        <li>컴포넌트 라이프 사이클에 대한 이해</li>
+                        <li>Hook</li>
+                        <li>React-router-dom</li>
                         <li>계속 공부 중 ...</li>
                      </ul> 
                   </article>
@@ -76,7 +79,7 @@ function Skill() {
                </div>
                <div className="techWrapper">
                   <article className="techIntro">
-                     <h3 className='techTit'>photoshop illustrator figma</h3>
+                     <h3 className='techTit'>photoshop, illustrator, figma</h3>
                      <ul className="techInfo">
                         <li>이미지 편집</li>
                         <li>프로토타입 제작</li>
