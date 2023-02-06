@@ -1,4 +1,62 @@
-@media (max-width: 458px) {
+@media screen and (max-width: 1800px){
+   body{
+      .introTop{
+         .topTit{
+            font-size:275px;
+         }
+      }
+      .mainContainer{
+         .projectWrapper{
+            .projectList{
+               li{
+                  width:33.75em;
+               }
+            }
+         }
+      }
+   }
+}
+@media screen and (max-width: 1450px) { /* 노트북 환경 */
+   body{
+      .introTop{
+         .topTit{
+            font-size:220px;
+         }
+      }
+      .mainContainer{
+         .projectWrapper{
+            margin: 0 auto 100px;
+            .projectList{
+               li{
+                  width: 22.75em;
+                  .projectTit{
+                     font-size:45px;
+                  }
+                  .projectPhoto{
+                     min-height:350px;
+                  }
+               }
+            }
+         }
+      }
+      .skillContainer{
+         .skillWarpper{
+            .skillItem{
+               padding:30px;
+            }
+         }
+      }
+      .footerWrapper {
+        .contactMail{
+         .emailH3{
+            font-size:85px;
+         }
+        }
+      }
+   }
+}
+
+@media screen and (max-width: 458px) {/* 모바일 환경 */
    /* mobile css 적용을 위한 body 태그 삽입 */
    body{
       /* top */

@@ -1,0 +1,86 @@
+@import '../../../asset/style/variable.scss';
+
+.txtCenter{
+   text-align:center;
+}
+
+.subContainer{
+   margin-top:100vh;
+   .titleSpot{
+      position: fixed;
+      top:150px;
+      left:0;
+      width:100%;
+      height:calc(100vh - 110px);
+      background-color: #ddd;
+      .titleBox{
+         width:calc(50% - 140px);
+         bottom:250px;
+         left:100px;
+         position: absolute;
+         .value{
+            font-size:22px;
+            font-family: $LeferiBold;
+         }
+         .title{
+            font-size:50px;
+            font-family: $LeferiBold;
+         }
+         .date{
+            font-size:16px;
+            text-transform: uppercase;
+         }
+      }
+      .thumBox{
+         width:50%;
+         position: absolute;
+         top:0;
+         right:0;
+         bottom:0;
+         overflow:hidden;
+         img{
+            object-fit: cover;
+            width:100%;
+            height:100%;
+         }
+      }
+   }
+   .contSpot{
+      overflow: hidden;
+      position: relative;
+      padding: 180px 0 100px;
+      background-color: #fff;
+      .Wrapper{
+         max-width:865px;
+         margin:0 auto;
+         .contInner{
+            .QAlist{
+               li{
+                  font-size:35px;
+                  font-family: $LeferiBold;
+                  margin-bottom:35px;
+                  .useTech{
+                     li{
+                        font-size:16px;
+                        font-family: $Leferi;
+                        margin:0;
+                     }
+                  }
+                  .textBox{
+                     margin-top:15px;
+                     font-size:16px;
+                     font-family: $Leferi;
+                     .Question{
+                        padding:20px;
+                        background-color: #ddd;
+                        span{
+                           display:block;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}

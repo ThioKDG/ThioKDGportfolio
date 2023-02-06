@@ -6,6 +6,9 @@ import Skill from "../components/Skill";
 
 import "./layStyles/layMain.scss";
 import "./layStyles/layMobile.scss"
+import Top from "./Top";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function Main() {
    const [project, setProject] = useState([]);
@@ -19,11 +22,16 @@ function Main() {
       getData();
    }, []);
    return (
-      <section className='mainContainer'>
-         <Rolling />
-         <MainProject project={project} />
-         <Skill />
-      </section>
+      <>
+         <Top />
+         <Header />
+         <section className='mainContainer'>
+            <Rolling />
+            <MainProject project={project} />
+            <Skill />
+         </section>
+         <Footer />
+      </>
    );
 }
 

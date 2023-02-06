@@ -6,18 +6,18 @@ import Footer from "./layout/Footer";
 
 import "./asset/style/style.scss";
 import { Route, Routes } from "react-router-dom";
+import Sub1 from "./components/sub/Sub1";
+import Sub2 from "./components/sub/Sub2";
 
 function App() {
   return (
     <>
-      <Top />
-      <Header />
-
       <Routes>
         <Route path="/ThioKDGportfolio" element={<Main />} />
+        <Route path="/sub1" element={<Sub1 />} />
+        <Route path="/sub2" element={<Sub2 />} />
       </Routes>
 
-      <Footer />
     </>
   );
 }

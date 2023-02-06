@@ -18,6 +18,15 @@
             min-height:510px;
             display:flex;
             align-items: center;
+            overflow: hidden;
+            &:hover{
+               img{
+                  transform: scale(1.1);
+               }
+            }
+            img{
+               transition: .8s;
+            }
          }
          .langTit{
             font-weight: bold;

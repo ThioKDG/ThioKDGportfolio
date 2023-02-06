@@ -11,15 +11,10 @@ function Skill() {
                </div>
                <div className='techWrapper'>
                   <article className="techIntro">
-                     <h3 className='techTit'>HTML</h3>
+                     <h3 className='techTit'>HTML5, CSS3</h3>
                      <ul className="techInfo">
                         <li>웹 접근성을 고려한 시멘틱 태그</li>
                         <li>미디어 쿼리를 이용한 반응형 웹 제작</li>
-                     </ul> 
-                  </article>
-                  <article className="techIntro">
-                     <h3 className='techTit'>CSS</h3>
-                     <ul className="techInfo">
                         <li>CSS를 이용한 애니메이션 사용</li>
                         <li>Flex, Grid, Position 이용</li>
                         <li>전처리기 SCSS 사용</li>
@@ -38,19 +33,19 @@ function Skill() {
                      <h3 className='techTit'>JAVASCRIPT(ES6+)</h3>
                      <ul className="techInfo">
                         <li>ES6+ 문법</li>
-                        <li>Map, Filter, Reduce 등 고차 함수</li>
-                        <li>비동기적 실행</li>
-                        <li>함수 setTimeout, setInterval</li>
-                        <li>콜백함수, promise, async, await</li>
-                        <li>런타임 node.js</li>
+                        <li>let, const 키워드 / 객체 리터럴 방식 사용</li>
+                        <li>구조 분해 할당 이용</li>
+                        <li>함수 표현식</li>
+                        <li>화살표 함수</li>
                      </ul> 
                   </article>
                   <article className="techIntro">
                      <h3 className='techTit'>React</h3>
                      <ul className="techInfo">
-                        <li>컴포넌트 라이프 사이클에 대한 이해</li>
                         <li>Hook</li>
+                        <li>use State, REF, Effect 이용</li>
                         <li>React-router-dom</li>
+                        <li>SPA, CSR</li>
                         <li>계속 공부 중 ...</li>
                      </ul> 
                   </article>

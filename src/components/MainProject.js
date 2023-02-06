@@ -9,7 +9,7 @@ function MainProject({ project }) {
          <ul class="projectList">
             {project.map((item) => (
                <li key={item.Id}>
-                  <Link to="/">
+                  <Link to={`/sub${item.Id}`}>
                      <p className="projectPhoto">
                         <img src={path + `/image/main/${item.thumbnail}`} alt={item.projectName} />
                      </p>
