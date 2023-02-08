@@ -11,17 +11,16 @@ function FooterCont(props) {
    //    }, 3000);
 
    // }
-   const handleCopyClipBoard = async (text: string) => {
-      try {
-        await navigator.clipboard.writeText(text);
-        alert('이메일 복사 완료! 새 창으로 gmail까지 이동할게요~');
-        setTimeout(() => {
-         window.open('https://gmail.com', '_blank');
-        }, 800);
-      } catch (e) {
-        alert('복사에 실패하였습니다');
-      }
-  };
+//    const handleCopyClipBoard = async (text: string) => {
+//       try {
+//         await navigator.clipboard.writeText(text);
+//         setTimeout(() => {
+//          window.open('https://mail.google.com/mail/u/0/?fs=1&to=kim2006207@gmail.com&tf=cm', '_blank');
+//         }, 800);
+//       } catch (e) {
+//         alert('복사에 실패하였습니다');
+//       }
+//   };
    
 
    return (
@@ -35,7 +34,7 @@ function FooterCont(props) {
          </article>
          <article className='contactMail'>
             <p className='contItalic'>i wait for you!</p>
-            <h3 onClick={() => {handleCopyClipBoard('kim2006207@gmail.com')}} className='emailH3'>
+            <h3 onClick={()=>{window.open('https://mail.google.com/mail/u/0/?fs=1&to=kim2006207@gmail.com&tf=cm', '_blank');}} className='emailH3'>
                kim2006207@gmail.com
             </h3>
             <p className='normalW'>메일을 보내주시면 평균기준 3일내로 답장드려요!</p>
