@@ -13,6 +13,7 @@ function Top(props) {
         src={path + `/image/main/walk.mp4`}
         muted
         autoPlay="ture"
+        playsinline
         loop
       ></video>
     </section>

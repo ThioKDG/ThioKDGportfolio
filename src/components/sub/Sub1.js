@@ -1,7 +1,7 @@
 import {motion} from 'framer-motion';
-import Header from '../../layout/Header';
 
-import './subStyles/subInner.scss'
+import '../../asset/style/style.scss';
+import './subStyles/subInner.scss';
 
 function Sub1(props) {
     const path = process.env.PUBLIC_URL;
@@ -32,14 +32,15 @@ function Sub1(props) {
                                     목표
                                     <div className='textBox'>
                                         <p className='Question'>
-                                        포트폴리오 페이지를 제작하면서 목표로 하고자 한 것은 조금 더 리액트에 친숙해지고자 하며,<span>그동안의 작업물들의 정리, 동시에 소개 페이지를 만들기 위해 제작했어요.</span>
+                                        리엑트로 포트폴리오 제작을 통해 다시 한번 더 복습하는 의미와 동시에
+                                        <span className='dBlock'>그동안의 작업물들의 정리와 동시에 소개 페이지를 만들기 위해 제작했어요.</span>
                                         </p>
                                     </div>
                                 </li>
                                 <li>
                                     디렉토리 구조
                                     <div className='textBox'>
-                                        <p className='Question txtCenter'>
+                                        <div className='Question txtCenter mobileExpend'>
                                             <img src={path + '/image/sub/dir.png'} alt="디렉토리 설명" />
                                             <ul className='hiddenWord'>
                                                 <li>public
@@ -110,50 +111,97 @@ function Sub1(props) {
                                                 </ul>
                                             </li>
                                             </ul>
-                                        </p>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
                                     사용기술
                                     <div className='textBox'>
-                                            <p className='Question'>
+                                            <div className='Question'>
                                                 <ul className='useTech'>
-                                                    <li>React, react-router-dom, JavaScript</li>
-                                                    <li>데이터 요청 및 출력 : Axios, JSON</li>
-                                                    <li>Tool : GitHub, Visual Studio Code, Figma</li>
+                                                    <li><span className='strong inBlock'>UI</span> : React, react-router-dom, JavaScript</li>
+                                                    <li><span className='strong inBlock'>데이터 요청 및 출력</span> : Axios, JSON</li>
+                                                    <li><span className='strong inBlock'>Tool</span> : GitHub, Visual Studio Code, Figma</li>
                                                 </ul>
-                                            </p>
+                                            </div>
                                     </div>
                                 </li>
                                 <li>
                                     페이지 구성
                                     <div className='textBox'>
-                                        <p className='Question'>메인 :
+                                        <div className='Question'>
                                             <ul className="useTech">
-                                                <li>router를 이용한 내비게이션 설정</li>
-                                                <li>map, JSON을 사용한 리스트 작성</li>
-                                                <li>navigator.clipboard 와 window.open을 이용한 텍스트 복사 및 새창열림</li>
-                                                <li>스크롤 이벤트 시 헤더 숨김/ 활성화</li>
-                                                <li>framer-motion을 이용한 컴포넌트간 페이지 전환 애니메이션</li>
+                                                <li><span className='strong'>인트로(Top)</span>
+                                                    <ul className='stepTwo'>
+                                                        <li>Main.js 한정으로만 보여주기 위해 route의 path를 Main.js와 똑같이 연결</li>
+                                                    </ul>
+                                                 </li>
+                                                <li><span className='strong'>헤더(Header)</span>
+                                                    <ul className='stepTwo'>
+                                                        <li>휠 이벤트로 스크롤 시 헤더를 감추고 다시 위로 스크롤 할 경우 헤더 노출</li>       
+                                                    </ul>
+                                                </li>
+                                                <li><span className='strong'>메인(Main) 및 롤링(Rolling)</span>
+                                                    <ul className='stepTwo'>
+                                                        <li>JSON 파일을 생성하여 따로 프로젝트목록의 내용들을 작성하여 map과 useEffect, state 를 사용하여 보여줌, Rolling 컴포넌트는 처음에 가로형으로 작업한 뒤 transform 과 translate-origin으로 축을 바꾸어 방향을 전환해줌</li>       
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span className="strong">푸터(Footer)</span>
+                                                    <ul className="stepTwo">
+                                                        <li>이메일, 깃허브 링크를 window.open을 이용하여 새창으로 열리도록 구현하였다.</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span className="strong">서브페이지(Sub1,2...)</span>
+                                                    <ul className="stepTwo">
+                                                        <li>메인페이지 프로젝트 결과보고서 링크 클릭 시 현재와 같은 페이지로 이동하도록 경로 설정을 해준다.</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span className="strong">페이지없음(NotFoundPage)</span>
+                                                    <ul className="stepTwo">
+                                                        <li>아직 구현이 안된 페이지링크 클릭시 404 error 페이지로 넘겨준다.</li>
+                                                    </ul>
+                                                </li>
                                             </ul>
-                                        </p>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
                                     문제 및 해결
                                     <div className='textBox'>
-                                        <p className='Question'>
+                                        <div className='Question'>
                                             <dl className='questionList'>
-                                                <dt>Top컴포넌트를 메인페이지만 보여주기</dt>
-                                                <dd>메인에만 보여줘야되는 Top 컴포넌트를 route를 걸어 Path를 메인페이지와 동일하게 맞춰주어 해결했다.</dd>
-                                                <dt>마우스 스크롤 이벤트 발생시 헤더 활성화 / 비활성화 구현 </dt>
+                                                <dt>
+                                                    addEventListener의 스크롤 이벤트 사용시 deltaY값이 적용 안됨
+                                                </dt>
                                                 <dd>
-                                                    <span className='strong'>페이지를 스크롤 했을때 헤더를 숨기고 보여주는 기능을 구현하러다 생긴 문제점.</span> 초반에 처음 식을 구현할 때 기존 JS처럼 method 부분에 event 를 적용하는 것 처럼 시도하였으나 이를 진행했을 때 'deltaY가 정의되지 않음' 오류가 발생했고, 시간이 걸렸지만 예제 사이트와 공식 문서에서 deltaY는 Wheel이벤트로 지정이 되어있었고 다시 EventListener 의 이벤트를 scroll에서 wheel로 바꿔주고 바로 해결되었다. 
+                                                    <div className='problem'>
+                                                        <span className='strong'>why? :</span>아래와 같이 코드 작성시 오류는 없으나 이벤트는 반응이 없다.
+                                                    </div>
+                                                    <div className='mB20'>
+                                                        <img src={path + '/image/sub/qna1Problem.png'} alt="문제가 있는 코드 사진" />
+                                                    </div>
+                                                    <div className='solution'>
+                                                        <span className='strong'>A</span> 리엑트에서의 deltaY 함수는 scroll이 아닌 wheel이벤트로 구분이 되어있어 addEventListener 의 'scroll'을 'wheel'로 바꾸자 정상적으로 작동 되었다.
+                                                    </div>
+                                                    <div className='mB20'>
+                                                        <img src={path + '/image/sub/qna1.png'} alt="수정 된 코드" />
+                                                    </div> 
                                                 </dd>
-                                                <dt>메인페이지 프로젝트 부분 맵 오류</dt>
-                                                <dd>이것도 확인해보니 gh-pages에 올라가면서 경로가 바뀌어 생긴 오류였다. 경로를 gh-pages와 맞춰주고 다시 한번 더 시도하니 다시 리스트내용이 보이게 되었다.{/* JSON으로 리스트 내용을 작성한 뒤 메인레이아웃 부분에 useState로 빈배열을 설정해주고, useEffect와 async, await로 JSON 내의 해당 객체를 호출한 뒤 다시 그 값을 하위 컴포넌트에 props으로 부여하여 map으로 내용을 보여주어 해결.  */}</dd>
+                                                <dt>gh-pages deploy 후 메인 컴포넌트 불러오지 못함</dt>
+                                                <dd>
+                                                    <div className='problem'>
+                                                        <span className='strong'>why? </span>gh-pages를 사용하면서 GitHub repo의 이름이 들어가다보니 경로가 바뀌어<span className='dBlock'></span> 컴포넌트를 못불러오는 상황이 발생했다.
+                                                    </div>
+                                                    <div className='solution'>
+                                                        <span className='strong'>A </span>
+                                                        route 경로를 '/' 에서 '/repo name' 으로 변경하니 정상적으로 컴포넌트가 불러와졌다.
+                                                    </div>
+                                                </dd>
                                             </dl>
-                                        </p>
+                                        </div>
                                     </div>
                                 </li>
                             </ol>

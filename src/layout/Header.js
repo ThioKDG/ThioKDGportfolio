@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+
 import "./layStyles/layHaeder.scss";
 
 function Header(props) {
@@ -12,8 +13,12 @@ function Header(props) {
    useEffect(() => {
       const wheelHandler = (e) =>{
          e.deltaY >= 100 ? setHead(true) : setHead(false);
+         // console.log(window.scrollY);
+         if(window.scrollY <= 615 ){
+            setHead(false);
+         }
       }
-      /* 휠 이벤트 발생시 델타와이 값을 받아서 헤더를 숨겨줌 */
+      /* 휠 이벤트 발생시 deltaY 값을 받아서 헤더를 숨겨줌 */
       window.addEventListener("wheel", wheelHandler);
 
       return () =>  window.removeEventListener("wheel", wheelHandler);
@@ -50,15 +55,15 @@ function Header(props) {
                      <Link to='/ThioKDGportfolio'>portfolio</Link> 
                   </h1>
                   <ul className={isOpen ? "headNaviList on" : "headNaviList"}>
-                     <li><Link to='/ThioKDGportfolio' onClick={handleGoUpProject}>project</Link></li>
-                     <li><Link to='/ThioKDGportfolio' onClick={handleGoUpSkill}>skill</Link></li>
-                     <li><Link to='/ThioKDGportfolio' onClick={handleGoUpFooter}>about</Link></li>
+                     <li onClick={handleGoUpProject}>project</li>
+                     <li onClick={handleGoUpSkill}>skill</li>
+                     <li onClick={handleGoUpFooter}>about</li>
                   </ul>
-                  <Link to="/ThioKDGportfolio" onClick={()=>toggleMenu()} className="moMenuOpen">
+                  <div onClick={()=>toggleMenu()} className="moMenuOpen">
                      <p className="hiddenWord">
                         메뉴 열림 버튼
                      </p>
-                  </Link>
+                  </div>
                </div>
             </nav>
       </header>

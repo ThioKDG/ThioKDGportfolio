@@ -29,3 +29,29 @@ body {
   width:1px; height:1px;
   margin:-1px;
 }
+
+.txtCenter{
+  text-align:center;
+}
+.strong{
+  font-weight:800;
+  .inBlock{
+     display:block;
+  }
+}
+.dBlock{
+  display:block;
+}
+
+.mT20{
+  margin-top:20px;
+}
+.mT15{
+  margin-top:15px;
+}
+.mB20{
+  margin-bottom:20px;
+}
+.mB15{
+  margin-bottom:15px;
+}

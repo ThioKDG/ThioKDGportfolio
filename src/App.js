@@ -8,6 +8,7 @@ import { Route, Routes } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Header from "./layout/Header";
 import Top from "./layout/Top";
+import NotFoundPage from "./layout/NotFoundPage";
 
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
         <Routes>
           <Route path="/ThioKDGportfolio" element={<Main />} />
           <Route path="/sub1" element={<Sub1 />} />
-          <Route path="/sub2" element={<Sub2 />} />
+          {/* <Route path="/sub2" element={<Sub2 />} /> */}
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </AnimatePresence>
     </div>

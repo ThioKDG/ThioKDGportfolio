@@ -79,7 +79,7 @@
       }
       /* header */
       .headerContianer{
-         height:100px;
+         height:80px;
          nav{
             // overflow: hidden;
             .navInner{
@@ -100,6 +100,7 @@
                   background: #fff;
                   width: 100%;
                   top: 0;
+                  left:0;
                   gap: 5px;
                   justify-content: center;
                   padding: 10px 0;
@@ -117,6 +118,7 @@
                   opacity: 1;
                   pointer-events: all;
                   top:58px;
+                  left:0;
                }
                .moMenuOpen{
                   display:block;
@@ -229,6 +231,76 @@
                margin-top:20px;
                p{
                   font-size:40px;
+               }
+            }
+         }
+      }
+   }
+   /* subPage */
+   body{
+      .subContainer{
+         margin:0;
+         .titleSpot{
+            position: static;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:30vh;
+            padding:50px 0;
+            overflow: hidden;
+            .titleBox{
+               position: static;
+               width:100%;
+               text-align:center;
+               .value{
+                  font-size:15px;
+               }
+               .title{
+                  font-size:35px;
+               }
+               .date{
+                  font-size:13px;
+               }
+            }
+            .thumBox{
+               display: none;
+            }
+         }
+         .contSpot{
+            position: static;
+            padding:50px 0;
+            .Wrapper{
+               width:100%;
+               max-width: fit-content;
+               .contInner{
+                  .QAlist{
+                     padding:0 33px;
+                     li{
+                        font-size:25px;
+                        .textBox{
+                           .Question{
+                              font-size:14px;
+                              padding:25px 10px;
+                              &.mobileExpend{
+                                 img{
+                                    transform:scale(1.25);
+                                 }
+                              }
+                              .questionList{
+                                 dt{
+                                    padding-top:5px;
+                                    background-size:5%;
+                                    background-position: 2% 50%;
+                                    font-size:18px;
+                                 }
+                                 dd{
+                                    padding-left:10px;
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
                }
             }
          }

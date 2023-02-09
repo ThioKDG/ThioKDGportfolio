@@ -1,16 +1,11 @@
 @import '../../../asset/style/variable.scss';
 
-.txtCenter{
-   text-align:center;
-}
-.strong{
-   font-weight:800;
-}
+
 .subContainer{
    margin-top:100vh;
    .titleSpot{
       position: fixed;
-      top:150px;
+      top:125px;
       left:0;
       width:100%;
       height:calc(100vh - 110px);
@@ -40,7 +35,6 @@
          right:0;
          bottom:0;
          overflow:hidden;
-         box-shadow: -5px 0px 10px rgba($color: #000000, $alpha: .5);
          img{
             object-fit: cover;
             width:100%;
@@ -67,6 +61,17 @@
                         font-size:16px;
                         font-family: $Leferi;
                         margin:0;
+                        &:last-child{
+                           .stepTwo{
+                              margin-bottom:0;
+                           }
+                        }
+                        .stepTwo{
+                           margin-bottom:20px;
+                           li{
+                              padding-left:20px;
+                           }
+                        }
                      }
                   }
                   .textBox{
@@ -74,23 +79,22 @@
                      font-size:16px;
                      font-family: $Leferi;
                      .Question{
-                        padding:20px;
+                        padding:30px 20px;
                         background-color: #ddd;
                         line-height:1.8;
-                        span{
-                           display:block;
-                        }
                         .questionList{
                            dt{
                               background:url('../../../asset/images/q-solid.svg') no-repeat 0% 50% / 3%;
                               padding:15px 0 10px 35px;
                               font-size:20px;
                               font-weight:800;
-                              margin-bottom:5px;
                            }
                            dd{
                               padding-left:35px;
                               letter-spacing: .4px;
+                              .problem, .solution{
+                                 margin-bottom:15px;
+                              }
                            }
                         }
                      }

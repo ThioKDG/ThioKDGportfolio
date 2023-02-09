@@ -1,5 +1,43 @@
+@import '../../asset/style/variable.scss';
+
 .mainContainer{
    width:100%;
    height:100%;
    margin-bottom:100px;
+}
+/* notfoundpage */
+.notFound{
+   width:100vw;
+   height:100%;
+   .wrapper{
+      width:50%;
+      margin:0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      font-family: $LeferiPointB;
+      .goWay{
+         width:250px;
+         margin-bottom:50px;
+      }
+      .noHere{
+         font-size:50px;
+      }
+      .backMain{
+         font-size:35px;
+      }
+      .gotoBtn{
+         margin-top:50px;
+         a{
+            padding: 10px 50px;
+            border:1px solid #000;
+            transition: .4s;
+            &:hover{
+               background-color: #000;
+               color:#fff;
+            }
+         }
+      }
+   }
 }
