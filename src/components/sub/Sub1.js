@@ -32,8 +32,8 @@ function Sub1(props) {
                                     목표
                                     <div className='textBox'>
                                         <p className='Question'>
-                                        리엑트로 포트폴리오 제작을 통해 다시 한번 더 복습하는 의미와 동시에
-                                        <span className='dBlock'>그동안의 작업물들의 정리와 동시에 소개 페이지를 만들기 위해 제작했어요.</span>
+                                        React로 포트폴리오 제작을 통해 다시 한번 더 복습하는 의미와 동시에
+                                        <span className='mobileInline'> 그동안의 작업물들의 정리와 동시에 소개 페이지를 만들기 위해 제작했어요.</span>
                                         </p>
                                     </div>
                                 </li>

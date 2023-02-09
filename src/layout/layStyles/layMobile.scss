@@ -272,16 +272,20 @@
             .Wrapper{
                width:100%;
                max-width: fit-content;
+               padding: 0 30px;
                .contInner{
                   .QAlist{
-                     padding:0 33px;
                      li{
                         font-size:25px;
                         .textBox{
                            .Question{
                               font-size:14px;
                               padding:25px 10px;
+                              .mobileInline{
+                                 display:inline;
+                              }
                               &.mobileExpend{
+                                 margin-bottom:100px;
                                  img{
                                     transform:scale(1.25);
                                  }

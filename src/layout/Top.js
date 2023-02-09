@@ -12,9 +12,9 @@ function Top(props) {
         className="topVideo"
         src={path + `/image/main/walk.mp4`}
         muted
-        autoPlay="ture"
-        playsinline
+        autoPlay
         loop
+        playsInline
       ></video>
     </section>
   );
