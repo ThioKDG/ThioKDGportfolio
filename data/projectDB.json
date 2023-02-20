@@ -11,13 +11,21 @@
       {
          "Id" : 2,
          "thumbnail" : "nklcb.png",
+         "lang" : "react, scss",
+         "projectName" : "티빙",
+         "team" : "개인작업",
+         "date" : "february 9, 2022"
+      },
+      {
+         "Id" : 3,
+         "thumbnail" : "nklcb.png",
          "lang" : "html, css",
          "projectName" : "넷스쿨라이브",
          "team" : "팀프로젝트 | 기여도 100%",
          "date" : "november 11, 2022"
       },
       {
-         "Id" : 3,
+         "Id" : 4,
          "thumbnail" : "studioRHE.png",
          "lang" : "html, css, js",
          "projectName" : "studio rhe",
@@ -25,7 +33,7 @@
          "date" : "december 19, 2022"
       },
       {
-         "Id" : 4,
+         "Id" : 5,
          "thumbnail" : "reactPage.png",
          "lang" : "react, scss",
          "projectName" : "react 홈페이지 제작",
