@@ -16,7 +16,7 @@ function Sub1(props) {
             <section className='subContainer'>
                 <div className='titleSpot'>
                     <div className="titleBox">
-                        <p className="value">PortFolio</p>
+                        <p className="value">PortFolio | 반응형 제작</p>
                         <h3 className='title'>포트폴리오 제작일지</h3>
                         <p className='date'>2023 January</p>
                     </div>
@@ -33,7 +33,7 @@ function Sub1(props) {
                                     <div className='textBox'>
                                         <p className='Question'>
                                         React로 포트폴리오 제작을 통해 다시 한번 더 복습하는 의미와 동시에
-                                        <span className='mobileInline'> 그동안의 작업물들의 정리와 동시에 소개 페이지를 만들기 위해 제작했어요.</span>
+                                        <span className='mobileInline'> 그동안의 작업물들의 정리와 소개 페이지를 만들기 위해 제작했어요.</span>
                                         </p>
                                     </div>
                                 </li>
@@ -119,7 +119,7 @@ function Sub1(props) {
                                     <div className='textBox'>
                                             <div className='Question'>
                                                 <ul className='useTech'>
-                                                    <li><span className='strong inBlock'>UI</span> : React, react-router-dom, JavaScript</li>
+                                                    <li><span className='strong inBlock'>UI</span> : React, react-router-dom, JavaScript, 반응형 웹</li>
                                                     <li><span className='strong inBlock'>데이터 요청 및 출력</span> : Axios, JSON</li>
                                                     <li><span className='strong inBlock'>Tool</span> : GitHub, Visual Studio Code, Figma</li>
                                                 </ul>
@@ -184,7 +184,7 @@ function Sub1(props) {
                                                         <img src={path + '/image/sub/qna1Problem.png'} alt="문제가 있는 코드 사진" />
                                                     </div>
                                                     <div className='solution'>
-                                                        <span className='strong'>A</span> 리엑트에서의 deltaY 함수는 scroll이 아닌 wheel이벤트로 구분이 되어있어 addEventListener 의 'scroll'을 'wheel'로 바꾸자 정상적으로 작동 되었다.
+                                                        <span className='strong'>A</span> React에서의 deltaY 함수는 scroll이 아닌 wheel이벤트로 구분이 되어있어 addEventListener 의 'scroll'을 'wheel'로 바꾸자 정상적으로 작동 되었다.
                                                     </div>
                                                     <div className='mB20'>
                                                         <img src={path + '/image/sub/qna1.png'} alt="수정 된 코드" />

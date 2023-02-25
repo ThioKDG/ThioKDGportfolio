@@ -52,7 +52,7 @@ function Header(props) {
             <nav>
                <div className="navInner">
                   <h1 className='headerLogoH1'>
-                     <Link to='/ThioKDGportfolio'>portfolio</Link> 
+                     <Link to='./'>portfolio</Link> 
                   </h1>
                   <ul className={isOpen ? "headNaviList on" : "headNaviList"}>
                      <li onClick={handleGoUpProject}>project</li>

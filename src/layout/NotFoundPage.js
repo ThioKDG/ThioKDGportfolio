@@ -1,10 +1,11 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useNavigation } from 'react-router-dom';
 import {motion} from 'framer-motion';
 
 import './layStyles/layMain.scss';
 
 function NotFoundPage() {
    const path = process.env.PUBLIC_URL;
+   const navigation = useNavigate();
 
    return (
       <motion.div 
@@ -18,8 +19,12 @@ function NotFoundPage() {
                   <img src={path + '/image/main/404.gif'} alt="NotFoundPage" />
                </p>
                <h3 className='noHere'>404 ERROR</h3>
-               <p className='backMain'>헉..! 아직 여기에는 아무것도 없네요..?</p>
-               <div className='gotoBtn'><Link to="/ThioKDGportfolio">메인으로</Link></div>
+               <p className='backMain'>앗! 페이지를 찾을 수가 없어요</p>
+               <div className='gotoBtn' onClick={() => navigation(-1)}>
+                  <span>
+                     이전으로
+                  </span>
+               </div>
             </div>
          </section>  
       </motion.div>

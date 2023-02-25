@@ -29,10 +29,12 @@
       }
       .gotoBtn{
          margin-top:50px;
-         a{
+         span{
+            display: block;
             padding: 10px 50px;
             border:1px solid #000;
             transition: .4s;
+            cursor: pointer;
             &:hover{
                background-color: #000;
                color:#fff;

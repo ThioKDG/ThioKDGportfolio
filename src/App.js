@@ -16,13 +16,13 @@ function App() {
     <div>
       <AnimatePresence>
         <Routes>
-          <Route path="/ThioKDGportfolio" element={<Top />} />
+          <Route path="/" element={<Top />} />
         </Routes>
         <Header />
         <Routes>
-          <Route path="/ThioKDGportfolio" element={<Main />} />
+          <Route path="/" element={<Main />} />
           <Route path="/sub1" element={<Sub1 />} />
-          {/* <Route path="/sub2" element={<Sub2 />} /> */}
+          <Route path="/sub2" element={<Sub2 />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </AnimatePresence>

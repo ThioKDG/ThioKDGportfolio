@@ -28,10 +28,9 @@
                font-weight: bold;
                padding: 0 20px;
                transition: .5s;
+               cursor: pointer;
                &:hover{
                   background-color: #000;
-               }
-               &:hover a{
                   color:#fff;
                }
             }
