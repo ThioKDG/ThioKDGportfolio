@@ -150,13 +150,13 @@ function Sub2(props) {
                                                 <li>
                                                     <span className="strong">영화예고편(movieTrailer)</span>
                                                     <ul className="stepTwo">
-                                                        <li>마찬가지로 메인, 상세페이지에서 넘어온 ID값을 이용하여 API상 존재하는 유튜브링크 ID를 호출하여 ReactPlayer Hook으로 영상을 보여준다.</li>
+                                                        <li>마찬가지로 useParams를 이용하여 id값을 받아 API의 해당 영화의 유튜브 트레일러 ID를 호출하여 'ReactPlayer Hook'으로 영상을 보여준다.</li>
                                                     </ul>
                                                 </li>
                                                 <li>
                                                     <span className="strong">페이지없음(NotFoundPage)</span>
                                                     <ul className="stepTwo">
-                                                        <li>폴더 내 존제하지않는 파일 접근 시 해당 페이지로 이동하여 존재하지 않는 페이지라고 안내한다.</li>
+                                                        <li>폴더 내 존재하지않는 파일 접근 시 해당 페이지로 이동하여 존재하지 않는 페이지라고 안내한다.</li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -169,30 +169,31 @@ function Sub2(props) {
                                         <div className='Question'>
                                             <dl className='questionList'>
                                                 <dt>
-                                                    addEventListener의 스크롤 이벤트 사용시 deltaY값이 적용 안됨
+                                                    API 호출 실패..?
                                                 </dt>
                                                 <dd>
                                                     <div className='problem'>
-                                                        <span className='strong'>why? :</span>아래와 같이 코드 작성시 오류는 없으나 이벤트는 반응이 없다.
+                                                        <span className='strong'>why? :</span> 작성한 코드자체의 문자였다. movieList 변수에다가 setProgram을 다시 호출하여 빈배열이 할당되어서 생긴 문제.
                                                     </div>
                                                     <div className='mB20'>
-                                                        <img src={path + '/image/sub/qna1Problem.png'} alt="문제가 있는 코드 사진" />
+                                                        <img src={path + '/image/sub/qna2Problem.png'} alt="문제가 있는 코드 사진" />
                                                     </div>
                                                     <div className='solution'>
-                                                        <span className='strong'>A</span> React에서의 deltaY 함수는 scroll이 아닌 wheel이벤트로 구분이 되어있어 addEventListener 의 'scroll'을 'wheel'로 바꾸자 정상적으로 작동 되었다.
+                                                        <span className='strong'>A</span> 문제가 되었던 movieList 변수를 삭제를 해주었다. 그 뒤 다시 확인하였더니 정상적으로 console.log 사용시 api 배열을 볼 수 있게 되었다.
                                                     </div>
                                                     <div className='mB20'>
-                                                        <img src={path + '/image/sub/qna1.png'} alt="수정 된 코드" />
+                                                        <img src={path + '/image/sub/qna2.png'} alt="수정 된 코드" />
                                                     </div> 
                                                 </dd>
-                                                <dt>gh-pages deploy 후 메인 컴포넌트 불러오지 못함</dt>
+                                                <dt>gh-pages deploy 진행시 Failed to get remote.origin.url 오류 발생</dt>
                                                 <dd>
                                                     <div className='problem'>
-                                                        <span className='strong'>why? </span>gh-pages를 사용하면서 GitHub repo의 이름이 들어가다보니 경로가 바뀌어<span className='dBlock'></span> 컴포넌트를 못불러오는 상황이 발생했다.
+                                                        <span className='strong'>why? </span>하나의 외장하드로 다른 기기에서 deploy를 진행하여서
                                                     </div>
                                                     <div className='solution'>
                                                         <span className='strong'>A </span>
-                                                        route 경로를 '/' 에서 '/repo name' 으로 변경하니 정상적으로 컴포넌트가 불러와졌다.
+                                                        물론 정확히는 처음 deploy를 진행했던 기기가 아니여서 그런 것 같다 생각한다. 포트폴리오 파일이나 지금까지 작업한 리엑트 프로젝트들은 외장하드에 들어가있어서 gh-pages를 다른 기기에서 deploy 작업을 할 경우 앞서 말한 오류가 발생했던 것이다. <span className='spanBlock'></span>
+                                                        git의 origin.url도 삭제, 수정도 해보고 packge 파일도 들어가보고 결국 계속 해결이 안되니 최후의 방법으로 git 폴더를 아예 초기화를 하려했으나 마지막 방법으로 git 로컬저장소에서 다시 clone을 해와서 deploy를 실행했더니 손쉽게 해결이 됐었다.
                                                     </div>
                                                 </dd>
                                             </dl>

@@ -56,6 +56,35 @@
    }
 }
 
+@media screen and (max-width: 1536px){ /* 1280 노트북 */
+   body{
+      .introTop{
+         .topTit{
+            font-size:240px;
+         }
+      }
+      .mainContainer{
+         .projectWrapper{
+            .projectList{
+               li{
+                  width:29em;
+                  .projectTit{
+                     font-size:45px;
+                  }
+               }
+            }
+         }
+      }
+      .footerWrapper{
+         .contactMail{
+            .emailH3{
+               font-size:80px;
+            }
+         }
+      }
+   }
+}
+
 @media screen and (max-width: 458px) {/* 모바일 환경 */
    /* mobile css 적용을 위한 body 태그 삽입 */
    body{
