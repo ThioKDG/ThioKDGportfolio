@@ -1,4 +1,5 @@
 import {motion} from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 import '../../asset/style/style.scss';
 import './subStyles/subInner.scss';
@@ -19,6 +20,9 @@ function Sub2(props) {
                         <p className="value">Api / Tving</p>
                         <h3 className='title'>티빙 클론코딩 / <span className='spanBlock'>영화 추천 사이트</span></h3>
                         <p className='date'>2023 february</p>
+                        <div className='goTo'>
+                            <p onClick={() => {window.open('https://thiokdg.github.io/cloneTving', '_blank')}}>페이지 바로가기</p>
+                        </div>
                     </div>
                     <div className='thumBox'>
                         <img src={path + '/image/main/tving.png'} alt="작업물 썸네일" />
@@ -32,8 +36,8 @@ function Sub2(props) {
                                     목표
                                     <div className='textBox'>
                                         <p className='Question'>
-                                        React로 포트폴리오 제작을 통해 다시 한번 더 복습하는 의미와 동시에
-                                        <span className='mobileInline'> 그동안의 작업물들의 정리와 소개 페이지를 만들기 위해 제작했어요.</span>
+                                        REST API를 이용하여 SPA 웹페이지를 만들어 보기 위해 제작했어요. 겸사겸사 영화추천 사이트도 만들어 보고요!
+                                        {/* <span className='mobileInline'> 그동안의 작업물들의 정리와 소개 페이지를 만들기 위해 제작했어요.</span> */}
                                         </p>
                                     </div>
                                 </li>
@@ -41,76 +45,7 @@ function Sub2(props) {
                                     디렉토리 구조
                                     <div className='textBox'>
                                         <div className='Question txtCenter mobileExpend'>
-                                            <img src={path + '/image/sub/dir.png'} alt="디렉토리 설명" />
-                                            <ul className='hiddenWord'>
-                                                <li>public
-                                                    <ul>
-                                                        <li>image
-                                                            <ul>
-                                                                <li>sub</li>
-                                                                <li>main</li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            <li>src
-                                                <ul>
-                                                    <li>components
-                                                        <ul>
-                                                            <li>sub
-                                                                <ul>
-                                                                    <li>subStyles</li>
-                                                                    <li>sub1.js </li>
-                                                                    <li>sub2.js... etc </li>
-                                                                </ul>
-                                                            </li>
-                                                            <li>compStyle
-                                                                <ul>
-                                                                    <li>footerStyle.scss</li>
-                                                                    <li>projectStyle.scss</li>
-                                                                    <li>rollStyle.scss</li>
-                                                                    <li>skill.scss</li>
-                                                                </ul>
-                                                            </li>
-                                                            <li>FooterCont.js</li>
-                                                            <li>MainProject.js</li>
-                                                            <li>Rolling.js</li>
-                                                            <li>Skill.js</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>assets
-                                                        <ul>
-                                                            <li>images</li>
-                                                            <li>font woff2관련 서체 파일 폴더입니다.</li>
-                                                            <li>style
-                                                                <ul>
-                                                                    <li>style.scss</li>
-                                                                    <li>variable.scss</li>
-                                                                    <li>reset.css</li>
-                                                                    <li>font.css</li>
-                                                                    <li>aniKeyframes.css</li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>layout
-                                                        <li>layStyles
-                                                            <ul>
-                                                                <li>layTops.scss</li>
-                                                                <li>layHeader.scss</li>
-                                                                <li>layMain.scss</li>
-                                                                <li>layFooter.scss</li>
-                                                                <li>layMobile.scss</li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>Top.js</li>
-                                                        <li>Header.js</li>
-                                                        <li>main.js</li>
-                                                        <li>Footer.js</li>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            </ul>
+                                            <img src={path + '/image/sub/dirTving.jpg'} alt="디렉토리 설명" />
                                         </div>
                                     </div>
                                 </li>
@@ -119,9 +54,9 @@ function Sub2(props) {
                                     <div className='textBox'>
                                             <div className='Question'>
                                                 <ul className='useTech'>
-                                                    <li><span className='strong inBlock'>UI</span> : React, react-router-dom, JavaScript</li>
-                                                    <li><span className='strong inBlock'>데이터 요청 및 출력</span> : Axios, API</li>
-                                                    <li><span className='strong inBlock'>Tool</span> : GitHub, Visual Studio Code, TMDB API</li>
+                                                    <li><span className='strong inBlock'>UI</span> : React, JavaScript, react-router-dom</li>
+                                                    <li><span className='strong inBlock'>데이터 요청 및 출력</span> : Axios, TMDB API</li>
+                                                    <li><span className='strong inBlock'>Tool</span> : GitHub, Visual Studio Code</li>
                                                 </ul>
                                             </div>
                                     </div>
@@ -150,7 +85,7 @@ function Sub2(props) {
                                                 <li>
                                                     <span className="strong">영화예고편(movieTrailer)</span>
                                                     <ul className="stepTwo">
-                                                        <li>마찬가지로 useParams를 이용하여 id값을 받아 API의 해당 영화의 유튜브 트레일러 ID를 호출하여 'ReactPlayer Hook'으로 영상을 보여준다.</li>
+                                                        <li>마찬가지로 useParams를 이용하여 id값을 받아 API의 해당 영화의 유튜브 트레일러 ID를 호출하여 'ReactPlayer'으로 영상을 보여준다.</li>
                                                     </ul>
                                                 </li>
                                                 <li>
@@ -173,27 +108,28 @@ function Sub2(props) {
                                                 </dt>
                                                 <dd>
                                                     <div className='problem'>
-                                                        <span className='strong'>why? :</span> 작성한 코드자체의 문자였다. movieList 변수에다가 setProgram을 다시 호출하여 빈배열이 할당되어서 생긴 문제.
+                                                        <span className='strong'>why? :</span> 코드 작성 중 잠꼬대를 한건지.. 작성한 코드자체의 문자였다. movieList 변수에다가 setProgram을 다시 호출하여 빈배열이 할당되어서 생긴 문제.
                                                     </div>
                                                     <div className='mB20'>
                                                         <img src={path + '/image/sub/qna2Problem.png'} alt="문제가 있는 코드 사진" />
                                                     </div>
                                                     <div className='solution'>
-                                                        <span className='strong'>A</span> 문제가 되었던 movieList 변수를 삭제를 해주었다. 그 뒤 다시 확인하였더니 정상적으로 console.log 사용시 api 배열을 볼 수 있게 되었다.
+                                                        <span className='strong'>A</span> 문제가 되었던 movieList 변수를 지워주고 다시 배열을 setProgram에 받아올 수 있도록 도와주니 정상적으로 해결되었다.
                                                     </div>
-                                                    <div className='mB20'>
+                                                    {/* <div className='mB20'>
                                                         <img src={path + '/image/sub/qna2.png'} alt="수정 된 코드" />
-                                                    </div> 
+                                                    </div>  */}
                                                 </dd>
                                                 <dt>gh-pages deploy 진행시 Failed to get remote.origin.url 오류 발생</dt>
                                                 <dd>
                                                     <div className='problem'>
-                                                        <span className='strong'>why? </span>하나의 외장하드로 다른 기기에서 deploy를 진행하여서
+                                                        <span className='strong'>why? </span> 본래 작업했던 데스크톱이 아닌 다른 기기여서..?
                                                     </div>
                                                     <div className='solution'>
                                                         <span className='strong'>A </span>
-                                                        물론 정확히는 처음 deploy를 진행했던 기기가 아니여서 그런 것 같다 생각한다. 포트폴리오 파일이나 지금까지 작업한 리엑트 프로젝트들은 외장하드에 들어가있어서 gh-pages를 다른 기기에서 deploy 작업을 할 경우 앞서 말한 오류가 발생했던 것이다. <span className='spanBlock'></span>
-                                                        git의 origin.url도 삭제, 수정도 해보고 packge 파일도 들어가보고 결국 계속 해결이 안되니 최후의 방법으로 git 폴더를 아예 초기화를 하려했으나 마지막 방법으로 git 로컬저장소에서 다시 clone을 해와서 deploy를 실행했더니 손쉽게 해결이 됐었다.
+                                                        의외로 간단하면서 눈치가 없었으면 계속 물고 늘어질 뻔한 문제였다.. <span className='spanBlock'></span>
+                                                        git의 origin.url도 삭제, 수정도 해보고 packge 파일도 들어가보고 결국 계속 해결이 안되니 최후의 방법으로 git 폴더를 아예 초기화를 하려했으나 혹시 몰라 git clone을 하여 deploy를 하니 반영되었다.
+                                                        <span className='spanBlock'></span> 
                                                     </div>
                                                 </dd>
                                             </dl>

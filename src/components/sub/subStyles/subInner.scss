@@ -27,6 +27,22 @@
             font-size:16px;
             text-transform: uppercase;
          }
+         .goTo{
+            margin-top:20px;
+            p{
+               display:inline-block;
+               padding:20px;
+               cursor: pointer;
+               transition: .5s;
+               border-radius: 5px;
+               background: #fff;
+               color:#000;
+               &:hover{
+                  background: rgba($color: #000000, $alpha: .3);
+                  color:#fff;
+               }
+            }
+         }
       }
       .thumBox{
          width:50%;
