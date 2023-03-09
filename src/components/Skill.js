@@ -45,8 +45,6 @@ function Skill() {
                         <li>Hook</li>
                         <li>use State, REF, Effect 이용</li>
                         <li>React-router-dom</li>
-                        <li>SPA, CSR</li>
-                        <li>계속 공부 중 ...</li>
                      </ul> 
                   </article>
                </div>
