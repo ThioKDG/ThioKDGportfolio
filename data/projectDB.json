@@ -31,14 +31,6 @@
          "projectName" : "studio rhe",
          "team" : "팀프로젝트 | 기여도 100%",
          "date" : "december 19, 2022"
-      },
-      {
-         "Id" : 5,
-         "thumbnail" : "reactPage.png",
-         "lang" : "react, scss",
-         "projectName" : "react 홈페이지 제작",
-         "team" : "개인프로젝트",
-         "date" : "january 16, 2023"
       }
    ]
 }
