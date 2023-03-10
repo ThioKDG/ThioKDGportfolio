@@ -193,11 +193,21 @@ function Sub1(props) {
                                                 <dt>gh-pages deploy 후 메인 컴포넌트 불러오지 못함</dt>
                                                 <dd>
                                                     <div className='problem'>
-                                                        <span className='strong'>why? </span>gh-pages를 사용하면서 GitHub repo의 이름이 들어가다보니 경로가 바뀌어<span className='dBlock'></span> 컴포넌트를 못불러오는 상황이 발생했다.
+                                                        <span className='strong'>why? </span>gh-pages를 사용하여 deploy를 한 뒤 실제 페이지에는 경로가 바뀌어<span className='dBlock'></span> 컴포넌트를 못불러오는 상황이 발생했다.
                                                     </div>
                                                     <div className='solution'>
                                                         <span className='strong'>A </span>
-                                                        route 경로를 '/' 에서 '/repo name' 으로 변경하니 정상적으로 컴포넌트가 불러와졌다.
+                                                        Github pages 로 올리다보니 경로가 다시 수정되어야 했다. route 경로를 '/' 에서 '/repo name' 으로 변경하니 정상적으로 컴포넌트가 불러와졌다.
+                                                    </div>
+                                                </dd>
+                                                <dt>메인페이지 - 아이폰에서 동영상 재생이 안된다?!</dt>
+                                                <dd>
+                                                    <div className='problem'>
+                                                        <span className='strong'>why? </span> 특정기기(IOS) 에서 접속시 메인페이지의 비디오가 자동재생이 안된다?
+                                                    </div>
+                                                    <div className='solution'>
+                                                        <span className='strong'>A </span>
+                                                        모바일 페이지는 어떻게 보일까하고 들어갔으나 자동재생이 안되는 문제가 생겨 video 태그에 문제가 있는 줄 알고 계속 살펴봤지만 생각하는 것과는 다른 문제였다. IOS의 경우는 video 태그에 'playsinline' 부분을 넣어줘야 자동재생이 되며 이마저도 IOS 10 버전 이후의 아이폰은 '절전모드' 가 켜져있으면 동영상 자동재생이 불가하다는 것이 원인이였다.
                                                     </div>
                                                 </dd>
                                             </dl>

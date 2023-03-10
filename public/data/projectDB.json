@@ -3,7 +3,7 @@
       {
          "Id" : 1,
          "thumbnail" : "portfolio.png",
-         "lang" : "react, scss",
+         "lang" : "react, scss / 반응형 제작",
          "projectName" : "포트폴리오 제작 과정",
          "team" : "개인작업",
          "date" : "january , 2023"

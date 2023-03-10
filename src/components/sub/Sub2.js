@@ -108,7 +108,7 @@ function Sub2(props) {
                                                 </dt>
                                                 <dd>
                                                     <div className='problem'>
-                                                        <span className='strong'>why? :</span> 코드 작성 중 잠꼬대를 한건지.. 작성한 코드자체의 문자였다. movieList 변수에다가 setProgram을 다시 호출하여 빈배열이 할당되어서 생긴 문제.
+                                                        <span className='strong'>why? :</span> 코드 작성 중 잠꼬대를 한건지.. 작성한 코드자체의 문재였다. movieList 변수에다가 setProgram을 다시 호출하여 빈배열이 할당되어서 생긴 문제.
                                                     </div>
                                                     <div className='mB20'>
                                                         <img src={path + '/image/sub/qna2Problem.png'} alt="문제가 있는 코드 사진" />
