@@ -115,7 +115,7 @@ function Sub2(props) {
                                                         <img src={path + '/image/sub/qna2Problem.png'} alt="문제가 있는 코드 사진" />
                                                     </div>
                                                     <div className='solution'>
-                                                        <span className='strong'>A</span> 문제가 되었던 movieList 변수를 지워주고 다시 배열을 setProgram에 받아올 수 있도록 도와주니 정상적으로 해결되었다.
+                                                        <span className='strong'>A</span> 문제가 되었던 movieList 변수를 지워주고 다시 배열을 setProgram에 받도록 하니 다시 정상적으로 호출이 되었다.
                                                     </div>
                                                     {/* <div className='mB20'>
                                                         <img src={path + '/image/sub/qna2.png'} alt="수정 된 코드" />
