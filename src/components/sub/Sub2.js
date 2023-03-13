@@ -18,7 +18,7 @@ function Sub2(props) {
                 <div className='titleSpot'>
                     <div className="titleBox">
                         <p className="value">Api / Tving</p>
-                        <h3 className='title'>티빙 클론코딩 / <span className='spanBlock'>영화 추천 사이트</span></h3>
+                        <h3 className='title'>티빙 클론코딩 / <span className='spanBlock'>영화 정보 사이트</span></h3>
                         <p className='date'>2023 february</p>
                         <div className='goTo'>
                             <p onClick={() => {window.open('https://thiokdg.github.io/cloneTving', '_blank')}}>페이지 바로가기</p>
@@ -36,7 +36,8 @@ function Sub2(props) {
                                     목표
                                     <div className='textBox'>
                                         <p className='Question'>
-                                        REST API를 이용하여 SPA 웹페이지를 만들어 보기 위해 제작했어요. 겸사겸사 영화추천 사이트도 만들어 보고요!
+                                        OPEN API를 이용하여 티빙 레이아웃을 적용한 SPA 웹페이지를 만들어 보기 위해 제작했어요.
+                                        <span className="mobileInline">겸사겸사 영화정보 사이트도 만들어 보고요!</span> 
                                         {/* <span className='mobileInline'> 그동안의 작업물들의 정리와 소개 페이지를 만들기 위해 제작했어요.</span> */}
                                         </p>
                                     </div>

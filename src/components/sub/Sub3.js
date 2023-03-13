@@ -12,7 +12,9 @@ function Sub3(props) {
         animate={{opacity:1}}
         exit={{opacity:0}}
         >
-            
+            <section className='subContainer'>
+                
+            </section>
         </motion.div>
     );
 }
