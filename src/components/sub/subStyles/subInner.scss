@@ -119,13 +119,17 @@
             }
             .repoNum{
                font-size:35px;
+               li{
+                  margin-bottom:20px;
+                  font-family: $NanumSquareRound;
+               }
                .repoH3{font-family: $LeferiBold;}
                .repoCont{
                   font-size:18px;
                   margin-top:20px;
                   padding:20px;
                   background-color: #ddd;
-                  li{margin-bottom:10px;}
+                  li{margin-bottom:10px;line-height: 1.7;}
                }
             }
          }

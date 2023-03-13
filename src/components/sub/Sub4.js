@@ -3,7 +3,7 @@ import {motion} from 'framer-motion';
 import '../../asset/style/style.scss';
 import './subStyles/subInner.scss';
 
-function Sub3(props) {
+function Sub4(props) {
     const path = process.env.PUBLIC_URL;
 
     return (
@@ -15,8 +15,8 @@ function Sub3(props) {
             <section className='subContainer'>
             <div className='titleSpot'>
                 <div className="titleBox">
-                    <p className="value">HTML, CSS / 팀프로젝트</p>
-                    <h3 className='title'><span>넷스쿨라이브 클론코딩</span></h3>
+                    <p className="value">HTML, CSS, JS / 팀프로젝트</p>
+                    <h3 className='title'><span>Studio RHE 클론코딩</span></h3>
                     <p className='date'>2022 november</p>
                     <div className='goTo'>
                         <p onClick={() => {window.open('https://ezen-nklcb.github.io/NETschoolLIVE/', '_blank')}}>페이지 바로가기</p>
@@ -33,9 +33,9 @@ function Sub3(props) {
                             <li>
                                 <h3 className='repoH3'>팀, 프로젝트 소개</h3>
                                 <ul className='repoCont'>
-                                    <li><strong>팀명</strong> : 네카라쿠배</li>
-                                    <li><strong>팀원 및 서브페이지</strong> : 김동건(메인페이지), 김지예(수강신청), 박이슬(홍보센터 &gt; 공지사항),주서현(수강생후기 &gt; 수강후기)</li>
-                                    <li><strong>담당 웹페이지</strong> : 넷스쿨라이브</li>
+                                    <li><strong>팀명</strong> : 크리스마스전에 끝내조</li>
+                                    <li><strong>팀원 및 서브페이지</strong> : 김동건(메인페이지), </li>
+                                    <li><strong>담당 웹페이지</strong> : Studio RHE</li>
                                 </ul>
                             </li>
                             <li>
@@ -80,4 +80,4 @@ function Sub3(props) {
     );
 }
 
-export default Sub3;
+export default Sub4;
