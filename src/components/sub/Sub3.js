@@ -29,13 +29,13 @@ function Sub3(props) {
             <div className="contSpot">
                 <div className="Wrapper">
                     <div className="contInner">
-                        <ol className='compReport'>
+                        <ol className='repoNum'>
                             <li>
                                 <h3 className='repoH3'>팀, 프로젝트 소개</h3>
-                                <ul className='repoBox'>
-                                    <li>팀명 : 네카라쿠배</li>
-                                    <li>팀원 및 담당서브페이지 : 김동건(메인페이지), 김지예(수강신청), 박이슬(홍보센터 &gt; 공지사항),주서현(수강생후기 &gt; 수강후기)</li>
-                                    <li>담당 웹페이지 : 넷스쿨라이브</li>
+                                <ul className='repoCont'>
+                                    <li><strong>팀명</strong> : 네카라쿠배</li>
+                                    <li><strong>팀원 및 서브페이지</strong> : 김동건(메인페이지), 김지예(수강신청), 박이슬(홍보센터 &gt; 공지사항),주서현(수강생후기 &gt; 수강후기)</li>
+                                    <li><strong>담당 웹페이지</strong> : 넷스쿨라이브</li>
                                 </ul>
                             </li>
                             <li>
