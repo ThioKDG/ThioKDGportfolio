@@ -124,12 +124,12 @@ function Sub2(props) {
                                                 <dt>gh-pages deploy 진행시 Failed to get remote.origin.url 오류 발생</dt>
                                                 <dd>
                                                     <div className='problem'>
-                                                        <span className='strong'>why? </span> 본래 작업했던 데스크톱이 아닌 다른 기기여서..?
+                                                        <span className='strong'>why? </span> 본래 작업했던 PC가 아닌 다른 기기여서??
                                                     </div>
                                                     <div className='solution'>
                                                         <span className='strong'>A </span>
-                                                        의외로 간단하면서 눈치가 없었으면 계속 물고 늘어질 뻔한 문제였다.. <span className='spanBlock'></span>
-                                                        git의 origin.url도 삭제, 수정도 해보고 packge 파일도 들어가보고 결국 계속 해결이 안되니 최후의 방법으로 git 폴더를 아예 초기화를 하려했으나 혹시 몰라 git clone을 하여 deploy를 하니 반영되었다.
+                                                        의외로 간단하면서 쉽게 해결이 가능했다..<span className='spanBlock'></span>
+                                                        git의 origin.url도 삭제, 수정도 해보고 packge 파일도 들어가보고 결국 계속 해결이 안되니 최후의 방법으로 git 폴더를 아예 초기화를 하려했으나 조금 다르게 생각하여 외부저장장치 대신 PC내의 폴더안에서 git clone을 한 뒤 deploy를 하니 반영되었다.
                                                         <span className='spanBlock'></span> 
                                                     </div>
                                                 </dd>
