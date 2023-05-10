@@ -29,7 +29,7 @@ function FooterCont(props) {
             <p className='rightMent'>contact me!</p>
             <div className='endingMent'>
                <p className='eng50'>thank you for watching</p>
-               <p>활기찬 프론트엔드 개발자 김동건입니다.</p>
+               <p>꾸준히 노력하는 웹 개발자 김동건입니다.</p>
             </div>
          </article>
          <article className='contactMail'>
