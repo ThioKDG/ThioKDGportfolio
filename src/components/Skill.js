@@ -32,18 +32,23 @@ function Skill() {
                   <article className="techIntro">
                      <h3 className='techTit'>JAVASCRIPT(ES6+)</h3>
                      <ul className="techInfo">
-                        <li>ES6+ 문법</li>
+                        <li>ES6+ 문법 이해</li>
                         <li>let, const 키워드 / 객체 리터럴 방식 사용</li>
                         <li>구조 분해 할당 이용</li>
-                        <li>함수 표현식</li>
-                        <li>화살표 함수</li>
+                        <li>Map, Filter등 고차함수 이용</li>
+                        <li>웹 스토리지(Web Storge)</li>
+                        <li>로컬 스토리지를(local Storge) 를 이용하여 클라이언트에 저장 및 활용</li>
+                        <li>통신 Fetch API 및 Aixos 사용</li>
+                        <li>비동기적 통신</li>
+                        <li>setTimeout, setInterval, async, await</li>
                      </ul> 
                   </article>
                   <article className="techIntro">
                      <h3 className='techTit'>React</h3>
                      <ul className="techInfo">
+                        <li>컴포넌트 생명주기에 대한 이해</li>
                         <li>Hook</li>
-                        <li>use State, REF, Effect 이용</li>
+                        <li>use State, useREF, useEffect 사용</li>
                         <li>React-router-dom</li>
                      </ul> 
                   </article>

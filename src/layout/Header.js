@@ -12,9 +12,11 @@ function Header(props) {
 
    useEffect(() => {
       const wheelHandler = (e) =>{
-         e.deltaY >= 100 ? setHead(true) : setHead(false);
+         // e.deltaY >= 100 ? setHead(true) : setHead(false);
          // console.log(window.scrollY);
-         if(window.scrollY <= 615 ){
+         if(window.scrollY >= 100 ){
+            setHead(true);
+         }else{
             setHead(false);
          }
       }
