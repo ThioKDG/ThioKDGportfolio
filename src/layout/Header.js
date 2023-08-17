@@ -14,7 +14,7 @@ function Header(props) {
     const wheelHandler = (e) => {
       // e.deltaY >= 100 ? setHead(true) : setHead(false);
       // console.log(window.scrollY);
-      if (window.scrollY >= 1000) {
+      if (window.scrollY >= 100) {
         setHead(true);
       } else {
         setHead(false);
