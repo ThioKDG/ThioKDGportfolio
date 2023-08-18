@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./layStyles/layHaeder.scss";
@@ -6,19 +6,16 @@ import "./layStyles/layHaeder.scss";
 function Header(props) {
   const [head, setHead] = useState(false);
   const [isOpen, setOpen] = useState(false);
-  const refHead = useRef();
-  const refNavi = useRef();
-  const refBtn = useRef();
 
   useEffect(() => {
     const wheelHandler = (e) => {
-      // e.deltaY >= 100 ? setHead(true) : setHead(false);
-      // console.log(window.scrollY);
-      if (window.scrollY >= 100) {
+      e.deltaY >= 1 ? setHead(true) : setHead(false);
+      console.log(e.deltaY);
+      /* if (e.deltaY >= 100) {
         setHead(true);
       } else {
         setHead(false);
-      }
+      } */
     };
     /* 휠 이벤트 발생시 deltaY 값을 받아서 헤더를 숨겨줌 */
     window.addEventListener("wheel", wheelHandler);

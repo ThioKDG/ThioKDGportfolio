@@ -3,7 +3,7 @@ import {motion} from 'framer-motion';
 import '../../asset/style/style.scss';
 import './subStyles/subInner.scss';
 
-function Sub3(props) {
+function Sub4(props) {
     const path = process.env.PUBLIC_URL;
 
     return (
@@ -15,15 +15,15 @@ function Sub3(props) {
             <section className='subContainer'>
             <div className='titleSpot'>
                 <div className="titleBox">
-                    <p className="value">HTML, CSS / 팀프로젝트</p>
-                    <h3 className='title'><span>넷스쿨라이브 클론코딩</span></h3>
-                    <p className='date'>2022 november</p>
+                    <p className="value">HTML, CSS, JS / 팀프로젝트</p>
+                    <h3 className='title'><span>Studio RHE 클론코딩</span></h3>
+                    <p className='date'>2022 december</p>
                     <div className='goTo'>
-                        <p onClick={() => {window.open('https://ezen-nklcb.github.io/NETschoolLIVE/', '_blank')}}>페이지 바로가기</p>
+                        <p onClick={() => {window.open('https://beforechristmas.github.io/StudioRhe/index.html', '_blank')}}>페이지 바로가기</p>
                     </div>
                 </div>
                 <div className='thumBox'>
-                    <img src={path + '/image/sub/Thum_nklcb.png'} alt="작업물 썸네일" />
+                    <img src={path + '/image/sub/Thum_bfXmas.png'} alt="작업물 썸네일" />
                 </div>
             </div>
             <div className="contSpot">
@@ -33,42 +33,50 @@ function Sub3(props) {
                             <li>
                                 <h3 className='repoH3'>팀, 프로젝트 소개</h3>
                                 <ul className='repoCont'>
-                                    <li><strong>팀명</strong> : 네카라쿠배</li>
-                                    <li><strong>팀원 및 서브페이지</strong> : 김동건(메인페이지), 김지예(수강신청), 박이슬(홍보센터 &gt; 공지사항),주서현(수강생후기 &gt; 수강후기)</li>
-                                    <li><strong>담당 웹페이지</strong> : 넷스쿨라이브</li>
+                                    <li><strong>팀명</strong> : 크리스마스전에 끝내조</li>
+                                    <li><strong>팀원 및 서브페이지</strong> : 김지훈(팀장 / 서브페이지),  설유미(서브페이지), 김동건(메인)</li>
+                                    <li><strong>담당 웹페이지</strong> : Studio RHE</li>
                                 </ul>
                             </li>
                             <li>
-                                <h3 className='repoH3'>진행과정(10.28 ~ 11.11)</h3>
+                                <h3 className='repoH3'>진행과정(12.16 ~ 12.27)</h3>
                                 <ul className='repoCont'>
-                                    <li>10월 28일 (첫 모임) - 팀원 배치 및 팀 담당 페이지 선택 역할 분담</li>
-                                    <li>10월 31일 (제작 회의) - 깃 관리자 선정 후에 깃 공유 폴더 생성</li>
-                                    <li>11월 01일 ~ 11월 03일 – 헤더, 푸터 제작 및 배포</li>
-                                    <li>11월 04일 ~ 11월 09일 – 각 담당 페이지 제작</li>
-                                    <li>11월 10일 – 작업물 통합 및 경로 맟춤, 통합과정에서 생기는 오류 수정 및 기능 일부 유지보수</li>
-                                    <li>11월 11일 – 최종 확인 및 보고서 작성</li>
+                                    <li>12. 16 - 첫 모임 및 제작 페이지 선정 회의 (제작할 페이지 리스트 작성)</li>
+                                    <li>12. 18 ~ 19 - 후보 사이트 중 Studio Rhe 결정 및 컨벤션 진행 후 담당 페이지 분담</li>
+                                    <li>12. 20 ~ 26 - 역할 분담에 따른 페이지 제작, 파일 합병 전 까지 유지보수</li>
+                                    <li>12. 27 - 깃 합병 및 경로 수정, 합병 시 생겨난 오류 처리 후 프로젝트 발표 및 보고서 작성</li>
                                 </ul>
                             </li>
                             <li>
                                 <h3 className="repoH3">담당업무</h3>
                                 <ul className='repoCont'>
-                                    <li>팀 내에서 팀장, 깃 관리자 역할을 맡아 팀의 깃 파일관리, 메인페이지 외 서브페이지 2개 제작을 맡았고 또한 팀원 서브페이지 제작시 생긴 문제사항등을 같이 보조하여 수정하였습니다.</li>
+                                    <li>팀 내에서 메인페이지 제작 담당 및 프로젝트 결과 발표를 맡음.</li>
                                 </ul>
                             </li>
                             <li>
                                 <h3 className='repoH3'>프로젝트 결과</h3>
                                 <ul className='repoCont'>
                                     <li>
-                                        프로젝트 결과는 원래 계획한 시간보다 일찍 메인페이지와 서브페이지들이 완성되어 '로그인페이지', '오시는 길' 페이지를 추가로 더 제작하였고 세세한 동작 부분은 힘들었지만 CSS의 애니메이션을 이용하여 최대한 구현할 수 있는 이벤트들을 구현해서 그나마 다행이라고 생각한다. 그리고 처음 팀프로젝트를 통하여 나올 수 있는 협업 중의 실수나 Git관리에 있어서 중요한 점을 배울 수 있었다.
+                                        프로젝트 결과는 페이지의 중심인 가로스크롤 및 일정 위치까지 스크롤시 보여지는 애니메이션과 서브페이지의 동영상의 클릭이벤트 까지 구현하여 프로젝트 마감 전 까지 Github를 통한 합병 후 유지보수까지 하여 마무리하였다.
                                     </li>
                                 </ul>
                             </li>
                             <li>
                                 <h3 className='repoH3'>부족한 점</h3>
                                 <ul className='repoCont'>
-                                    <li>공용 깃 폴더 경로를 생성한 것 까진 좋았으나 어떤 파일에서 공통적으로 사용할 css 파일이라던가, 파일경로를 세세하게 정하지 않은 것</li>
-                                    <li>일부 JS가 아닌 애니메이션으로 구현을 하여 아쉽게 느껴진다.</li>
-                                    <li>팀원과의 커뮤니케이션이 의외로 부족하여 사전에 조금 더 시간을 써서 세세한 부분을 조율을 못한 점</li>
+                                    <li>마크업시 애니메이션 개별적용을 위해 구조를 변경했었는데 끝내 속성값을 재때 바꾸지 못했음</li>
+                                    <li>deltaY를 이용하여 가로스크롤을 구현해서인지는 몰라도 스크롤시 부드럽게 이동하는 부분을 구현은 못하였지만 다른 방법으로 가로스크롤을 시도해봐야 됨.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 className='repoH3'>개인리뷰 / 배우게 된 점</h3>
+                                <ul className='repoCont'>
+                                    <li>
+                                        메인 사이트를 맡으면서 기존 세로형과는 다른 가로형 스크롤을 제작했던 것이 제일 색다른거 같다. deltaY 값을 이용하여 가로스크롤을 구현할 수 있어서 문제가 간단하게 해결될거라 생각했지만 의외로 이것이 복선이 되어 스크롤을 할 때 부드러운 이동을 줄 수 없다는게 흠이 되어 아쉬웠다.
+                                        <p>
+                                            또한 컨벤션에서 정해뒀던 규칙대로 클래스로 작성하고 또 스타일 값을 줄 때 작성해야되는 코드의 길이가 점점 길어저 의외로 가독성이 줄어들고 또한 오히려 정해놓은 규칙 때문에 클래스명이나 아이디를 작성하는데 시간이 더 걸려서 혹여 컨벤션을 진행 하게 될 경우 좀 더 간결하고 꼼꼼하게 규칙을 정해야 될 거 같다.
+                                        </p>
+                                    </li>
                                 </ul>
                             </li>
                         </ol>
@@ -80,4 +88,4 @@ function Sub3(props) {
     );
 }
 
-export default Sub3;
+export default Sub4;
