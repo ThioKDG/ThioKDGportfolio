@@ -6,7 +6,8 @@
          "lang" : "react, scss / 반응형",
          "projectName" : "포트폴리오 제작 과정",
          "team" : "개인작업",
-         "date" : "january , 2023"
+         "date" : "january , 2023",
+         "link" : "https://www.notion.so/OPEN-API-React-5bcaa397864f4438b7ab9e08d1c317c4#c7f4f589aae54686839e6322fe3d1384"
       },
       {
          "Id" : 2,
@@ -14,7 +15,8 @@
          "lang" : "react, scss",
          "projectName" : "티빙 / 영화정보 사이트",
          "team" : "개인작업",
-         "date" : "february 9, 2022"
+         "date" : "february 9, 2022",
+         "link" : "https://www.notion.so/OPEN-API-React-5bcaa397864f4438b7ab9e08d1c317c4#c7f4f589aae54686839e6322fe3d1384"
       },
       {
          "Id" : 3,
@@ -22,7 +24,8 @@
          "lang" : "html, css, js",
          "projectName" : "studio rhe",
          "team" : "팀프로젝트 | 기여도 50%",
-         "date" : "december 19, 2022"
+         "date" : "december 19, 2022",
+         "link" : ""
       }
    ]
 }
