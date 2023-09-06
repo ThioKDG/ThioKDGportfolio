@@ -17,8 +17,10 @@
          .projectPhoto{
             min-height:510px;
             display:flex;
+            position:relative;
             align-items: center;
             overflow: hidden;
+            z-index: 9;
             &:hover{
                img{
                   transform: scale(1.1);
@@ -26,6 +28,25 @@
             }
             img{
                transition: .8s;
+            }
+            .hoverFloat{
+               opacity: 0;
+               display:flex;
+               justify-content: center;
+               align-items: center;
+               width:100%;
+               height:100%;
+               position:absolute;
+               top:0;
+               right:0;
+               background-color: rgba($color: #000000, $alpha: .5);
+               color:#fff;
+               font-size:50px;
+               z-index: 99;
+               transition: .4s ease;
+               &:hover{
+                  opacity: 1;
+               }
             }
          }
          .langTit{
