@@ -52,8 +52,7 @@ function Skill() {
                 <li>함수형 컴포넌트 이용</li>
                 <li>컴포넌트 생명주기에 대한 이해</li>
                 <li>Hook</li>
-                <li>use State, useREF, useEffect 사용</li>
-                <li>React-router-dom</li>
+                <li>SPA, MPA 별 장,단점에 대한 이해</li>
               </ul>
             </article>
           </div>
