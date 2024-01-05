@@ -37,7 +37,6 @@ function FooterCont(props) {
             <h3 onClick={()=>{window.open('https://mail.google.com/mail/u/0/?fs=1&to=kim2006207@gmail.com&tf=cm', '_blank');}} className='emailH3'>
                kim2006207@gmail.com
             </h3>
-            <p className='normalW'>메일을 보내주시면 평균기준 3일내로 답장드려요!</p>
          </article>
          <div className='goGithub'>
             <p onClick={()=>{window.open('https://github.com/ThioKDG','_blank')}}>go to gitHub</p>
