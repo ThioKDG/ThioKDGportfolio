@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import './compStyle/footerStyle.scss';
 
 function FooterCont(props) {
