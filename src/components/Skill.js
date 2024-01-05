@@ -49,6 +49,7 @@ function Skill() {
             <article className="techIntro">
               <h3 className="techTit">React</h3>
               <ul className="techInfo">
+                <li>함수형 컴포넌트 이용</li>
                 <li>컴포넌트 생명주기에 대한 이해</li>
                 <li>Hook</li>
                 <li>SPA, MPA 별 장,단점에 대한 이해</li>
